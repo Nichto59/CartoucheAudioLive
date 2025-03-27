@@ -1,6 +1,16 @@
-from audio_engine import AudioEngine
+# Exemple : Système complet avec 2 cartouches
+class SystemeAudio:
+    def __init__(self):
+        self.cartouches = {}  # Dictionnaire des cartouches
+    
+    def ajouter_cartouche(self, id_cartouche):
+        self.cartouches[id_cartouche] = CartoucheVLC()
+    
+    def jouer_cartouche(self, id_cartouche, fichier):
+        self.cartouches[id_cartouche].play(fichier)
 
-engine = AudioEngine()
-audio = engine.load_audio("test.wav")  # Charge le fichier
-engine.play(audio)  # Joue le son
-input("Appuyez sur Entrée pour arrêter...")  # Garde le programme actif
+# Utilisation
+systeme = SystemeAudio()
+systeme.ajouter_cartouche("fond_sonore")
+systeme.ajouter_cartouche("jingles")
+systeme.jouer_cartouche("fond_sonore", "ambiance.mp3")
