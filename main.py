@@ -1,1 +1,1 @@
-print("Bonjour Cartouche Audio Live !")
+print("NOUVELLE VERSION ! Cartouche Audio Live est opérationnel 🎵")
