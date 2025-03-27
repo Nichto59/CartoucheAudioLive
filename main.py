@@ -1,1 +1,2 @@
-print("NOUVELLE VERSION ! Cartouche Audio Live est opérationnel 🎵")
+print("🔥 Cartouche Audio Live - Version mise à jour !")
+# Votre code personnalisé ici
